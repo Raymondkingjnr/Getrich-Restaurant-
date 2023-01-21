@@ -5,6 +5,7 @@
   align-items: center;
   background: var(--color-black);
   padding: 1rem 2rem;
+  position: sticky;
 }
 .app__navbar-logo {
   display: flex;

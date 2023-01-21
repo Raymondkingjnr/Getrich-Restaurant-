@@ -5,23 +5,23 @@ import { SubHeading, MenuItem } from "../../components";
 import "./SpecialMenu.css";
 
 const SpecialMenu = () => (
-  <div className="app__specialmenu flex__center">
+  <div className="app__specialmenu flex__center" id="menu">
     <div className="app__specialmenu-title">
       <SubHeading title="More That Fits Your Palatte" />
       <h1 className="headtext__cormorant">Today's Special</h1>
     </div>
 
-    <div className="app__specialmenu-menu">
-      <div className="app__specialmenu-menu_wine flex__center">
-        <p className="app__specialmenu_menu_heading">Wine & Beer</p>
+    <div className="app__specialmenu-menu section__padding">
+      <div className="app__specialmenu-menu_wine">
+        <p className="app__specialmenu-menu_heading">Wine & Beer</p>
 
         <div className="app__specialmenu_menu_item">
           {data.wines.map((wine, index) => (
             <MenuItem
               key={wine.title + index}
               title={wine.title}
-              price={wine.price}
               tags={wine.tags}
+              price={wine.price}
             />
           ))}
         </div>
@@ -31,8 +31,8 @@ const SpecialMenu = () => (
         <img src={images.menu} alt="menu" />
       </div>
 
-      <div className="app__specialmenu-menu_cocktails flex__center">
-        <p className="app__specialmenu_menu_heading">Cocktails</p>
+      <div className="app__specialmenu-menu_cocktails">
+        <p className="app__specialmenu-menu_heading">Cocktails</p>
 
         <div className="app__specialmenu_menu_item">
           {data.cocktails.map((cocktail, index) => (
