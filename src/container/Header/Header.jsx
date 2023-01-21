@@ -8,7 +8,7 @@ const Header = () => (
     <div className="app__wrapper_info">
       <SubHeading title="Chase the new lavour" />
       <h1 className="app__header-h1">The Ket to Fine Dining</h1>
-      <p className="opensans" style={{ margin: "2rem 0" }}>
+      <p className="opensans" style={{ margin: "2rem 0", color: "#fff" }}>
         Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat
         morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet
         tellus{" "}
